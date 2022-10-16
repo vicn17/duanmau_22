@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+    <link rel="shortcut icon" href="../img/logo_iconToco.png" />
+    <link rel="stylesheet" href="../css/order.css" />
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/review_product.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo_header">
+                    <a href="./index.html"><img src="../img/Logo-ngang-01.png" alt="" /></a>
+                </div>
+                <div class="search">
+                    <div class="search_glass">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Search..." />
+                </div>
+                <div class="btn_header">
+                    <a href="./login.html">Đăng nhập</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <label for="bars_checked">
+          <div class="menu_bars">
+            <i class="fal fa-bars"></i>
+          </div>
+        </label>
+            <input type="checkbox" name="inp_bars_check" id="bars_checked" />
+            <section class="first_section">
+                <ul class="list_menu">
+                    <li>Danh mục</li>
+                    <li><a href="#card_tille_event">Món nổi bật</a></li>
+                    <li><a href="#card_tille_event_2">Trà sữa</a></li>
+                    <li><a href="#card_tille_event_3">Fresh Fruit Tea</a></li>
+                    <li>
+                        <a href="#card_tille_event_4">Machiato Cream Cheese</a>
+                    </li>
+                    <li><a href="#card_tille_event_5">Sữa chua dẻo</a></li>
+                </ul>
+            </section>
+            <section class="nth_section_2">
+                <div class="section_2_main">
+                    <div class="list_card">
+                        <!-- content1 -->
+                        <div id="card_tille_event" class="card_tille">
+                            <label for="click_card_tille">Món nổi bật </label>
+                            <label for="click_card_tille">
+                  <i class="fa-solid fa-angle-down"></i>
+                </label>
+                        </div>
+                        <input type="checkbox" class="click_card_none" name="" id="click_card_tille" />
+                        <div id="list_card_content">
+                            <div class="card_produce">
+                                <label for="review"><img src="../img_card/trà-xoài-bưởi-hồng.png" alt=""
+                  /></label>
+                                <label for="review"><span>Trà xoài bưởi hồng</span></label>
+                                <span>38,000đ</span>
+                                <input type="checkbox" hidden name="" id="review" />
+                                <label class="overlay-review" for="review"></label>
+                                <div class="product-preview">
+                                    <label for="review"><i class="fa-solid close-preview fa-xmark"></i
+                    ></label>
+                                    <div class="product-single">
+                                        <div class="product-single-img">
+                                            <img src="../img_card/dâu-tằm-pha-lê-tuyết.jpg" alt="" />
+                                        </div>
+                                        <div class="product-single-detail">
+                                            <h3>Trà Xoài Bưởi Hồng</h3>
+                                            <span>25.000d</span>
+                                            <p>chưa có thông tin</p>
+                                            <div class="up-and-down">
+                                                <span>--</span><span>1</span><span>+</span>
+                                            </div>
+                                            <p>+25.000</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-product">
+                                        <span>Chọn loại</span>
+                                        <div class="list-content"><span></span>Lạnh</div>
+                                        <span>Chọn size</span>
+                                        <div class="list-content"><span></span>Size L</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/trà-xoài-bưởi-hồng-kem-phô-mai.png" alt="" />
+                                <span>Trà xoài bưởi hồng kem phô mai</span>
+                                <span>48,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/Hình-ảnh-sp-website_1000x1000_choco-ngũ-cốc-kem-cafe (1).png" alt="" />
+                                <span>Choco ngũ cốc kem cafe</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/Hình-ảnh-sp-website_1000x1000_hồng-trà-ngũ-cốc-kem-cafe (1).png" alt="" />
+                                <span>Hồng trà ngũ cốc kem cafe</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/Royal-Pearl-Milk-Coffee.png" alt="" />
+                                <span>Royal Pearl Milk Coffee</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/Grass-Jelly-Milk-Coffee.png" alt="" />
+                                <span>Grass Jelly Milk Coffee</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-12.jpg
+                                " alt="" />
+                                <span>Tiger Sugar</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-10.jpg
+                                " alt="" />
+                                <span>Trà sữa trân châu hoàng gia</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/1578305659051_tra_sua_3_anh_em_e5929a819d2c4b08a1ae2caafe921473_grande.jpg
+                                " alt="" />
+                                <span>Trà sữa ba anh em</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-9.jpg
+                                " alt="" />
+                                <span>Trà sữa Panda</span>
+                                <span>28,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-21.jpg
+                                " alt="" />
+                                <span>Trà sữa kim cương đen Okinawa</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/oolong-kem-pho-mai_75e8d3f11fb3402196416da77c8ff33a_grande.png
+                                " alt="" />
+                                <span>Ô long kem phô mai</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/tra-dua_02578f0fe1f845379f84dd0aacc05f7b_grande.png
+                                " alt="" />
+                                <span>Trà dứa nhiệt đới</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-16.jpg
+                                " alt="" />
+                                <span>Trà sữa hanh phúc</span>
+                                <span>29,000đ</span>
+                            </div>
+                        </div>
+                        <!-- content1 -->
+                        <!-- content2 -->
+                        <div id="card_tille_event_2" class="card_tille">
+                            <label for="click_card_tille_2">Trà sữa </label>
+                            <label for="click_card_tille_2">
+                  <i class="fa-solid fa-angle-down"></i>
+                </label>
+                        </div>
+                        <input type="checkbox" class="click_card_none" name="" id="click_card_tille_2" />
+                        <div id="list_card_content_2">
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-11.jpg
+                                " alt="" />
+                                <span>Matcha đậu đỏ</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-6.jpg
+                                " alt="" />
+                                <span>Sữa tươi chân trâu baby kem cafe</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-6.jpg
+                                " alt="" />
+                                <span>Ô long trân châu baby kem cafe</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-13.jpg
+                                " alt="" />
+                                <span>Trà xanh</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-19.jpg
+                                " alt="" />
+                                <span>Ô long thái cực</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-15.jpg
+                                " alt="" />
+                                <span>Trà xanh sữa vị nhài</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-17.jpg
+                                " alt="" />
+                                <span>Trà sữa matcha</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-18.jpg
+                                " alt="" />
+                                <span>Trà sữa ô long</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/1578304012347_hong_tra_f8b228ea2b0147a5b05c9292569deea7_grande.jpg
+                                " alt="" />
+                                <span>Hồng trà</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-22.jpg
+                                " alt="" />
+                                <span>Trà sữa socola</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-23.jpg
+                                " alt="" />
+                                <span>Trà sữa bạc hà</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/Hinh-anh-sp-website_tra-sua-dau-tay.png
+                                " alt="" />
+                                <span>Trà sữa dâu tây</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/tra_sua_5151e515636b4cb4b82e947fb2276d3f_2f9b0119e4f5470bbc976bab8522863a_grande.jpg
+                                " alt="" />
+                                <span>Trà sữa</span>
+                                <span>29,000đ</span>
+                            </div>
+                        </div>
+                        <!-- content2 -->
+                        <!-- content3 -->
+                        <div id="card_tille_event_3" class="card_tille">
+                            <label for="click_card_tille_3">Fresh Fruit Tea</label>
+                            <label for="click_card_tille_3">
+                  <i class="fa-solid fa-angle-down"></i>
+                </label>
+                        </div>
+                        <input type="checkbox" class="click_card_none" name="" id="click_card_tille_3" />
+                        <div id="list_card_content_3">
+                            <div class="card_produce">
+                                <img src="../img_card/trà-xoài-bưởi-hồng.png
+                                " alt="" />
+                                <span>Trà xoài bưởi hồng</span>
+                                <span>38,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-2.jpg
+                                " alt="" />
+                                <span>Probi Bưởi Trân Châu Sương Mai</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-3.jpg
+                                " alt="" />
+                                <span>Xoài Trân Châu Sương Mai</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/dâu-tằm-pha-lê-tuyết.jpg
+                                " alt="" />
+                                <span>Trà dâu tằm pha lê tuyết</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/tra_xanh_xoai_35d69664c31248faaf3eeade044035ba_grande.jpg
+                                " alt="" />
+                                <span>Trà xanh xoài</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/ezgif.com-gif-maker-7.jpg
+                                " alt="" />
+                                <span>hồng trà bưởi mật ong</span>
+                                <span>29,000đ</span>
+                            </div>
+                        </div>
+                        <!-- content3 -->
+                        <!-- content4 -->
+                        <div id="card_tille_event_4" class="card_tille">
+                            <label for="click_card_tille_4">Machiato Cream Cheese</label>
+                            <label for="click_card_tille_4">
+                  <i class="fa-solid fa-angle-down"></i>
+                </label>
+                        </div>
+                        <input type="checkbox" class="click_card_none" name="" id="click_card_tille_4" />
+                        <div id="list_card_content_4">
+                            <div class="card_produce">
+                                <img src="../img_card/trà-xoài-bưởi-hồng-kem-phô-mai.png
+                                " alt="" />
+                                <span>Trà bưởi hồng kem phô mai</span>
+                                <span>48,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/Hình-ảnh-sp-website_1000x1000_choco-ngũ-cốc-kem-cafe.png
+                                " alt="" />
+                                <span>Choco ngũ cốc kem cafe</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/Hình-ảnh-sp-website_1000x1000_hồng-trà-ngũ-cốc-kem-cafe.png
+                                " alt="" />
+                                <span>hồng trà ngũ cốc kem cafe</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/dau_tam_kem_pho_mai_09a4c4b857694d918a86542225fc2867_grande.jpg
+                                " alt="" />
+                                <span>Dâu tằm kem phô mai</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/matcha-kem-pho-mai_09b3b54997614aea86d2b61bcd7f548c_73a9e7cd539949718b13b06c5db9522f_grande.png
+                                " alt="" />
+                                <span>Matcha kem phô mai</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/hong_tra_kem_pho_mai_bea768e4679b4a2bbea0d5730fc75ffa_4dbc2f739c184bbbad3cee27aab5cfcd_grande.jpg
+                                " alt="" />
+                                <span>hồng xanh kem phô mai</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/tra_xanh_kem_pho_mai_1ed02f821288425d87dd9fc096c62768_40b394e0280f4d55819de201a4405718_grande.jpg
+                                " alt="" />
+                                <span>Trà xanh kem phô mai</span>
+                                <span>29,000đ</span>
+                            </div>
+                        </div>
+                        <!-- content4 -->
+                        <!-- content5 -->
+                        <div id="card_tille_event_5" class="card_tille">
+                            <label for="click_card_tille_5">Sữa chua dẻo</label>
+                            <label for="click_card_tille_5">
+                  <i class="fa-solid fa-angle-down"></i>
+                </label>
+                        </div>
+                        <input type="checkbox" class="click_card_none" name="" id="click_card_tille_5" />
+                        <div id="list_card_content_5">
+                            <div class="card_produce">
+                                <img src="../img_card/sua-chua-dau-tam-hoang-kim.png
+                                " alt="" />
+                                <span>Sữa chua dâu tằm hoàng kim</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/sua-chua-dau-tam-hat-de-.png
+                                " alt="" />
+                                <span>Sữa chua dâu tằm hạt dẻ</span>
+                                <span>29,000đ</span>
+                            </div>
+                            <div class="card_produce">
+                                <img src="../img_card/sua-chua-trang-.png
+                                " alt="" />
+                                <span>Sữa chua trắng</span>
+                                <span>29,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="last_section">
+                <div class="cart">
+                    <div class="cart_main">
+                        <div class="cart_tille">
+                            <span>GIỎ HÀNG CỦA TÔI</span>
+                            <a href="">Xóa tất cả</a>
+                        </div>
+                        <div class="cart_index">
+                            <span>Chưa có sản phẩm nào!</span>
+                        </div>
+                        <div class="cart_icon">
+                            <img src="../img/icon-glass-tea.png" alt="" />
+                        </div>
+                        <div class="cart_btn">
+                            <button>Thanh toán</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="fill_card">
+                <div class="content_review"></div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="content-footer">
+                    <img src="../img/ft_logo.png " alt=" " />
+                </div>
+                <div class="content-footer">
+                    <span>Copyrights © 2019 by ToCoToCoTea. All rights reserved.</span>
+                </div>
+                <div class="content-footer">
+                    <a href="https://www.facebook.com/tocotocobubbletea ">
+                        <i class="fa-brands fa-facebook-square fb-icons"></i>
+                    </a>
+                    <a href="https://www.instagram.com/tocotoco_bubble_tea/ ">
+                        <i class="fa-brands fa-instagram-square fb-icons"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@tocotocobubbletea/ ">
+                        <i class="fa-brands fa-twitter-square fb-icons"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<?php
+session_start();
+if(!isset($_SESSION['linkHeaderOtherRecruit'])) $_SESSION['linkHeaderOtherRecruit'] = "Tuyển dụng";
+$recruit = $_SESSION['linkHeaderOtherRecruit'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tuyển dụng</title>
+    <link rel="shortcut icon" href="./img/image-removebg-preview.png" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/recruit.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/logo_iconToco.png" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="banner-header">
+            <?php
+                if(isset($_SESSION['user_name'])){
+                    include "./layout/headerOrderLogin.php";
+                }
+                else{
+                    include "./layout/headerOther.php"; 
+                }
+            ?>
+        </div>
+        <div class="tille-home">
+            <div class="tille-home-center">
+                <h3>Vị trí tuyển dụng</h3>
+                <h1>CÁC VỊ TRÍ HIỆN TẠI</h1>
+                <img src="./img/home_line.webp" alt="" />
+                <p>
+                    Chúng tôi luôn tìm kiếm những người tuyệt vời! Nếu bạn chưa tìm thấy cơ hội phù hợp hiện tại, nhưng
+                    tin rằng bạn có thể trở thành 1 phần của ToCoToCo Tea, hãy gửi thông tin cho chúng tôi.
+                </p>
+            </div>
+        </div>
+        <section class="box_text">
+            <div class="box_text_center">
+                <h1>"</h1>
+                <p>
+                    “ToCoToCo với tâm huyết lấy nông sản Việt Nam làm nguồn nguyên liệu chính, dùng nông sản Việt tạo ra
+                    những ly đồ uống mang đậm hương vị quê hương, an toàn và giàu giá trị dinh dưỡng. Việc ưu tiên sử
+                    dụng nguồn nông sản trong nước trong pha chế góp phần
+                    đẩy mạnh tiêu thụ, gắn với cuộc vận động “Người Việt Nam ưu tiên dùng hàng Việt Nam” vừa thúc đẩy
+                    niềm tự hào dân tộc đồng thời giải quyết vấn đề đầu ra của nông sản Việt là giá trị cốt lõi của
+                    TocoToco cả hiện tại và tương lai”
+                </p>
+            </div>
+        </section>
+        <section class="section_content">
+            <div class="wrapper">
+                <div class="content_row_1 row">
+                    <div class="text_content">
+                        <h1>LỊCH SỬ PHÁT TRIỂN</h1>
+                        <p>
+                            Trở về những ngày đầu tiên khi TocoToco là một cửa hàng nhỏ nhưng luôn tấp nập phục vụ khách
+                            hàng những sản phẩm được làm từ nguồn nguyên liệu sạch và chất lượng hàng đầu. Tháng
+                            11/2013, thương hiệu trà sữa TocoToco chính thức được thành lập bởi công
+                            ty cổ phần thương mại dịch vụ Taco Việt Nam. Tính đến thời điểm hiện tại, TocoToco hiện có
+                            khoảng 150 cửa hàng phủ sóng trên toàn quốc và là tên tuổi được người tiêu dùng yêu mến và
+                            tin cậy hàng đầu tại thị trường Việt Nam.
+                        </p>
+                    </div>
+                    <div class="img_content">
+                        <img src="./img/about_img1.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="content_row_2 row">
+                    <div class="text_content">
+                        <h1>KHÁC BIỆT ĐẾN TỪ NHỮNG ĐIỀU ĐƠN GIẢN NHẤT</h1>
+                        <p>
+                            Ngay từ đầu, Tocotoco đã định hình và lựa chọn con đường đi khác biệt. Đó là không chỉ đem
+                            đến những ly đồ uống chất lượng hảo hàng mà còn đem lại cho khách hàng những trải nghiệm,
+                            xúc cảm tuyệt vời nhất. Các cửa hàng của chúng tôi đã trở thành địa điểm
+                            dành cho những người yêu thích trà, đặc biệt là trà sữa trên khắp Việt Nam. Tại sao họ chỉ
+                            muốn thưởng thức trà sữa TocoToco? Vì họ biết họ có thể tin tưởng vào "dịch vụ chân thật,
+                            một không gian hấp dẫn và một ly trà sữa tuyệt
+                            hảo" được pha chế một cách chuyên nghiệp.
+                        </p>
+                    </div>
+                    <div class="img_content">
+                        <img src="./img/about_img2.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="content_row_3 row">
+                    <div class="text_content">
+                        <h1>TOCOTOCO – NHIỀU HƠN CẢ MỘT LY ĐỒ UỐNG</h1>
+                        <p>
+                            Với một ly đồ uống TocoToco, chúng tôi thật sự kỳ vọng sẽ truyền cảm hứng và nuôi dưỡng tâm
+                            hồn con người – những người bạn, những ly trà sữa ngọt ngào và những phút giây thư giãn quý
+                            giá. Mọi người đến TocoToco để trò chuyện, họp mặt hoặc làm việc. Chúng
+                            tôi là địa điểm tụ họp cho tình bạn, tình yêu, tình đồng nghiệp, những mối quan hệ đã trở
+                            thành một phần trong cuộc sống hàng ngày – và đây chính là những điều nhỏ xinh khiến chúng
+                            tôi không thể hạnh phúc hơn.
+                        </p>
+                    </div>
+                    <div class="img_content">
+                        <img src="./img/about_img3.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_collection">
+            <div class="wrapper">
+                <div class="collection_row">
+                    <div class="icon_collection">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <p>CHÍNH SÁCH TUYỂN DỤNG CHUYÊN NGHIỆP, MINH BẠCH, CÔNG BẰNG</p>
+                    </div>
+                    <div class="icon_collection">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p>
+                            TRUNG TÂM ĐÀO TẠO VỚI NHIỀU CHƯƠNG TRÌNH ĐÀO TẠO CHỨC DANH, ĐÀO TẠO NGUỒN
+                        </p>
+                    </div>
+                    <div class="icon_collection">
+                        <i class="fa-solid fa-trophy"></i>
+                        <p>
+                            CƠ HỘI THĂNG TIẾN RỘNG MỞ VỚI PHƯƠNG CHÂM: PHÁT TRIỂN NGUỒN LỰC NỘI BỘ LÀ TRỌNG TÂM
+                        </p>
+                    </div>
+                    <div class="icon_collection">
+                        <i class="fa-solid fa-money-bill-1"></i>
+                        <p>
+                            CHẾ ĐỘ ĐÃI NGỘ, THƯỞNG HẤP DẪN, CẠNH TRANH, XỨNG ĐÁNG VỚI NĂNG LỰC VÀ ĐÓNG GÓP
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <?php
+                include "./layout/footer.php";
+            ?>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+html {
+  font-size: 16px;
+  font-family: "Chakra Petch", sans-serif;
+}
+table {
+  text-align: center;
+  /* width: 100%; */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  margin: 3rem 0;
+  border-radius: 10px;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  overflow: hidden;
+}
+tbody tr:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
+th {
+  padding: 20px 30px;
+  font-weight: 800;
+  font-size: 18px;
+}
+td {
+  padding: 30px;
+}
+thead {
+  background-color: rgb(241 245 249);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+.icon a {
+  margin: 0 5px;
+}
+.icon a i {
+  font-size: 24px;
+}
+.icon .edit {
+  color: #2f9d77;
+}
+.icon .delete {
+  color: red;
+}

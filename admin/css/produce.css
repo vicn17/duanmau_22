@@ -1,0 +1,136 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+.show {
+  display: block;
+  width: 100%;
+}
+table {
+  width: 100%;
+}
+.titleProduce {
+  /* margin: 30px 0; */
+  margin-top: 20px;
+  /* margin-bottom: 40px; */
+}
+.titleProduce h1,
+.titleProduce h2 {
+  color: #2f9d77;
+}
+td span {
+  padding: 5px 20px;
+  background-color: #2f9d77;
+  color: white;
+  border-radius: 8px;
+}
+.tools {
+  /* height: 150px; */
+  width: 100%;
+  background-color: rgb(241 245 249);
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 30px 0;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+label {
+  display: block;
+  font-weight: 800;
+  color: gray;
+  font-size: 18px;
+}
+.search-box {
+  width: 30%;
+}
+.addPro input {
+  display: block;
+}
+.addPro {
+  width: 40%;
+}
+input,
+select,
+button,
+.labelCheckbox {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.25s ease-in-out;
+  box-shadow: 0 0px 1px gray;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 0px 5px #2f9d77;
+}
+
+button {
+  background-color: #2f9d77;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  width: 50%;
+  height: 50px;
+  float: right;
+}
+button:hover {
+  background-color: white;
+  color: #2f9d77;
+  box-shadow: 0 0px 2px #2f9d77;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ ul {
+  display: block;
+  height: 200px;
+}
+.labelCheckbox {
+  background-color: white;
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+.labelCheckbox ul {
+  background-color: white;
+  box-shadow: 0 5px 5px gray;
+  position: absolute;
+  left: 0;
+  top: 3rem;
+  width: 100%;
+  height: 0;
+  overflow: scroll;
+  scrollbar-width: 0;
+  transition: all 0.2s linear;
+  border: none;
+}
+.labelCheckbox ul::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+.labelCheckbox ul::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 3px;
+}
+.labelCheckbox ul li {
+  padding: 8px 0;
+}
+.labelCheckbox ul li a {
+  text-decoration: none;
+  color: gray;
+  border-left: 0px solid #2f9d77;
+  transition: all 0.2s linear;
+  padding: 5px 0;
+  padding-left: 10px;
+}
+.labelCheckbox ul li:hover a {
+  color: #2f9d77;
+  border-left: 5px solid #2f9d77;
+}

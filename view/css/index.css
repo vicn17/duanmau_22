@@ -1,0 +1,352 @@
+/* *TILLE HOME */
+
+.tille-home {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tille-home-center {
+  text-align: center;
+}
+
+.tille-home h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2f9d77;
+  margin-bottom: 10px;
+}
+
+.tille-home h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 10px;
+  font-family: "Baloo 2", cursive;
+}
+
+/* TODO: RESPONSIVE TILLE HOME */
+
+@media only screen and (max-width: 767px) {
+  .tille-home {
+    height: 200px;
+  }
+  .tille-home h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .tille-home h1 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+}
+
+/* *NTH-SECTION(2) */
+
+.section-menu-card {
+  width: 100%;
+  text-align: center;
+}
+
+.list-produce {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-produce {
+  width: 23%;
+  text-align: center;
+  transition: all 0.5s;
+  overflow: hidden;
+  margin: 20px 0px;
+}
+
+.section-menu-card .btn-bottom {
+  padding: 15px 30px;
+  background-color: #2f9d77;
+  border: 1px solid #2f9d77;
+  color: white;
+  font-size: medium;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.section-menu-card .btn-bottom:hover {
+  background-color: white;
+  color: #2f9d77;
+  border: 1px solid #2f9d77;
+}
+
+.card-produce img {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.card-produce:hover {
+  box-shadow: 0px 10px 5px gray;
+}
+
+.card_produce_hover {
+  position: relative;
+  top: 60px;
+  transition: all 0.2s linear;
+}
+
+.card-produce:hover .card_produce_hover {
+  top: 0;
+}
+
+.card_produce_hover span {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.card_produce_hover span:first-child {
+  font-weight: 600;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px;
+}
+
+.card_produce_hover span:nth-child(2) {
+  color: #2f9d77;
+  font-weight: 500;
+}
+
+.card-produce button {
+  background-color: #2f9d77;
+  border: 1px solid #2f9d77;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 500;
+  transition: all 0.25s ease-in-out;
+}
+
+.card-produce button:hover {
+  background-color: white;
+  color: #2f9d77;
+  border: 1px solid #2f9d77;
+}
+
+/* TODO: RESPONSIVE NTH-SECTION(2) */
+
+@media only screen and (max-width: 415px) {
+  .card_produce_hover {
+    /* top: 10px; */
+  }
+  .card_produce_hover span {
+    /* display: block; */
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* .section-menu-card {
+        margin-bottom: 50px;
+    } */
+  .list-produce {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .card-produce {
+    width: 46%;
+    overflow: hidden;
+  }
+  .card_produce_hover {
+    top: 30px;
+  }
+  .card-produce button {
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+    color: white;
+  }
+  .card-produce:hover button {
+    background-color: #2f9d77;
+    color: black;
+  }
+  .card-produce button:hover {
+    background-color: white;
+    color: #2f9d77;
+    border: 1px solid #2f9d77;
+  }
+}
+
+@media only screen and (min-width: 416px) and (max-width: 1080px) {
+  .list-produce {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .card-produce {
+    overflow: hidden;
+  }
+  .card_produce_hover {
+    top: 60px;
+  }
+  .card-produce button {
+    background-color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+    color: white;
+  }
+  .card-produce:hover button {
+    background-color: #2f9d77;
+    color: black;
+  }
+  .card-produce button:hover {
+    background-color: white;
+    color: #2f9d77;
+    border: 1px solid #2f9d77;
+  }
+}
+
+/* *LAST SECTION */
+
+.last-section {
+  background: rgba(0, 0, 0, 0.4) url(../img/tra-sua-nhuong-quen-tocotoco.jpg);
+  background-blend-mode: darken;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+.iframe_maps {
+  height: 70vh;
+  width: 40%;
+}
+
+.iframe_maps iframe {
+  width: 100%;
+  height: 100%;
+  background: url(https://tocotocotea.com/wp-content/uploads/2022/06/Slide_banner-1-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 10px black;
+}
+
+.select-store {
+  width: 40%;
+  height: 70vh;
+  right: 100px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.select-store::-webkit-scrollbar {
+  width: 10px;
+  background-color: #bebebe;
+  border-radius: 10px;
+}
+
+.select-store::-webkit-scrollbar-thumb {
+  background-color: #8c8c8c;
+  border-radius: 10px;
+}
+
+.option-store {
+  background-color: #aeaeae;
+  width: 95%;
+  height: 20%;
+  margin: 20px 0;
+  align-items: center;
+  display: flex;
+}
+
+.option_store_right {
+  display: flex;
+  flex-flow: column;
+  margin-left: 20px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.option_store_right span {
+  line-height: 1.8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.option_store_img {
+  height: 100%;
+}
+
+.option_store_img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.option-store a:hover {
+  text-decoration: underline;
+}
+
+.option-store .tille-bold {
+  font-weight: 700;
+}
+
+/* TODO: RESPONSIVE LAST-SECTION */
+
+@media only screen and (max-width: 415px) {
+  .option-store {
+    width: 100%;
+    height: 25%;
+  }
+  .option_store_img {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .option_store_img img {
+    height: 70%;
+    object-fit: cover;
+  }
+  .option_store_right span {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .last-section {
+    width: 100%;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+  .iframe_maps {
+    width: 100%;
+    height: 50%;
+    margin: 50px 0;
+  }
+  .select-store {
+    width: 100%;
+    height: 60%;
+  }
+  .select-store::-webkit-scrollbar {
+    width: 0;
+  }
+  .option-store {
+    width: 100%;
+    height: 25%;
+  }
+}

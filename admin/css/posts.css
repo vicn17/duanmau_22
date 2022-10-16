@@ -1,0 +1,132 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+.titlePosts {
+  margin: 1rem 0;
+  color: #2f9d77;
+}
+.listCardPosts {
+  width: 40%;
+  height: 90vh;
+}
+.listCardPosts h2,
+.formPosts h2 {
+  margin-bottom: 1rem;
+  color: #2f9d77;
+}
+.listPosts {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.listPosts::-webkit-scrollbar {
+  width: 10px;
+}
+.listPosts::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to top, #b2c9ac, #73beb7);
+  border-radius: 10px;
+}
+.cardPosts {
+  position: relative;
+  width: 98%;
+  height: 380px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.cardPosts img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+}
+.cardPosts .title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 10px 0;
+}
+.cardPosts .title a {
+  color: #2f9d77;
+  text-decoration: none;
+}
+.cardPosts .title a:hover {
+  text-decoration: underline;
+}
+.cardPosts .content {
+  color: gray;
+  font-size: 17px;
+}
+input,
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 8px 3px;
+  border: none;
+  border-bottom: 2px solid #2f9d77;
+  outline: none;
+}
+textarea {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  border: 1px solid #2f9d77;
+}
+.wrapperPosts {
+  display: flex;
+  justify-content: space-between;
+}
+.formPosts {
+  width: 40%;
+}
+.formPosts label {
+  font-weight: 800;
+}
+.formPosts button {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #b2c9ac, #73beb7);
+  border: 1px solid transparent;
+  padding: 10px 0;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.fillPostsHover {
+  position: absolute;
+  background-color: rgb(200, 200, 200);
+  height: 14rem;
+  width: 14rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s linear;
+}
+.fillPostsHover a {
+  font-size: 24px;
+  margin-top: 5.5rem;
+}
+.hoverLeft {
+  left: -14rem;
+  top: -14rem;
+}
+.cardPosts:hover .hoverLeft {
+  left: -7rem;
+  top: -7rem;
+}
+.hoverLeft a {
+  margin-left: 5.5rem;
+  color: red;
+}
+.hoverRight {
+  right: -14rem;
+  top: -14rem;
+}
+.cardPosts:hover .hoverRight {
+  right: -7rem;
+  top: -7rem;
+}
+.hoverRight a {
+  margin-right: 5.5rem;
+}

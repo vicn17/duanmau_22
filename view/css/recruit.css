@@ -1,0 +1,222 @@
+/* *TILLE HOME */
+
+.tille-home {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.tille-home-center {
+  text-align: center;
+  width: 80%;
+}
+
+.tille-home h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #d3b673;
+  margin-bottom: 10px;
+}
+
+.tille-home h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 10px;
+  font-family: "Baloo 2", cursive;
+}
+
+.tille-home p {
+  margin-top: 30px;
+}
+
+/* TODO: RESPONSIVE TILLE HOME */
+
+@media only screen and (max-width: 767px) {
+  .tille-home {
+    height: 200px;
+  }
+  .tille-home h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .tille-home h1 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+  .tille-home-center p {
+    text-align: justify;
+  }
+  .tille-home-center img {
+    width: 250px;
+  }
+}
+
+/* *BOX_TEXT */
+
+.box_text {
+  background: url(../img/about-banner-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-attachment: scroll;
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box_text::before {
+  content: "";
+  background-color: rgba(13, 13, 13, 0.85);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.box_text_center {
+  text-align: center;
+  width: 80%;
+  padding: 60px 0;
+  line-height: 24px;
+  z-index: 1;
+}
+
+.box_text_center h1 {
+  font-size: 100px;
+  font-family: sans-serif;
+}
+
+/* *SECTION_CONTENT */
+
+.section_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80%;
+}
+
+.row {
+  display: flex;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.text_content {
+  text-align: justify;
+  width: 80%;
+  margin: 50px 30px;
+}
+
+.text_content h1 {
+  font-family: "Baloo 2", cursive;
+}
+
+.text_content p {
+  /* width: 80%; */
+  margin-top: 20px;
+}
+
+.img_content {
+  width: 100%;
+  margin: 0 30px;
+  /* display: flex;
+    justify-content: right; */
+}
+
+.img_content img {
+  width: 100%;
+}
+
+.content_row_2 {
+  flex-flow: row-reverse;
+}
+
+/* TODO: RESPONSIVE SECTION_CONTENT */
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+  .row {
+    flex-flow: column-reverse;
+    /* text-align: center; */
+  }
+  .img_content img {
+    margin: 0 -30px;
+  }
+  .text_content {
+    margin: 30px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+  }
+  .text_content p {
+    text-align: justify;
+  }
+  .box_text_center p {
+    text-align: justify;
+  }
+}
+
+/* *SECTION_COLLECTION */
+
+.section_collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.collection_row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icon_collection {
+  font-size: 12px;
+  font-weight: 500;
+  width: 20%;
+  text-align: center;
+}
+
+.icon_collection i {
+  font-size: 60px;
+  color: #d3b673;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.icon_collection:hover i {
+  transform: rotate(360deg);
+  color: black;
+}
+
+.icon_collection p {
+  margin-top: 40px;
+}
+
+/* TODO: RESPONSIVE SECTION_COLLECTION */
+
+@media only screen and (max-width: 768px) {
+  .icon_collection {
+    width: 43%;
+    margin: 20px 0;
+  }
+}

@@ -1,0 +1,126 @@
+/* *style body */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7) url(../img/about-banner-main.png);
+  background-blend-mode: darken;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* todo: style section */
+
+section {
+  display: flex;
+  align-items: center;
+  width: 800px;
+  height: 500px;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+form {
+  display: block;
+  width: 50%;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+form input {
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-bottom: 2px solid #2f9d77;
+}
+form span a {
+  font-size: 54px;
+  color: #2f9d77;
+  font-family: "Permanent Marker", cursive;
+  text-decoration: none;
+}
+form a {
+  color: #49a6f8;
+  font-size: 15px;
+  text-decoration: underline;
+}
+
+form button {
+  padding: 15px 0;
+  width: 100%;
+  margin: 15px 0;
+  border: 1px solid #2f9d77;
+  background-color: #2f9d77;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+
+form button:hover {
+  background-color: #fff;
+  color: #2f9d77;
+  cursor: pointer;
+}
+
+form button:last-child {
+  background-color: black;
+  color: #fff;
+  border: 1px solid black;
+}
+
+form button:last-child:hover {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+}
+
+section .img-left {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-left img {
+  width: 100%;
+  height: inherit;
+}
+
+@media only screen and (max-width: 767px) {
+  section {
+    height: 450px;
+    width: 90%;
+  }
+  form {
+    width: 100%;
+  }
+  form span a {
+    font-size: 42px;
+  }
+  form input {
+    margin: 1rem 0;
+    font-size: 16px;
+  }
+  form button {
+    font-size: 16px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 1.5rem;
+  }
+  form a {
+    font-size: 16px;
+  }
+  .img-left {
+    display: none;
+  }
+}

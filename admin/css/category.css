@@ -1,0 +1,71 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+table {
+  width: 100%;
+}
+.formAddCate {
+  width: 100%;
+  height: 14rem;
+  background-color: rgb(241 245 249);
+  border-radius: 10px;
+  margin: 50px 0;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.addcate {
+  width: 20%;
+}
+.addcate label {
+  font-weight: 800;
+  color: gray;
+}
+.addcate select,
+.addcate input,
+.addcate button {
+  width: 100%;
+  display: block;
+  margin: 15px 0;
+  padding: 8px 5px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+}
+.addcate input,
+.addcate select {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.addcate input:focus,
+.addcate select:focus {
+  box-shadow: 0 0 10px #2f9d77;
+}
+.addcate button {
+  background-color: #2f9d77;
+  border: 1px solid #2f9d77;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+.addcate button:hover {
+  background-color: white;
+  color: #2f9d77;
+}
+.titleCate {
+  margin-top: 20px;
+  /* margin-bottom: 40px; */
+}
+.titleCate h1 {
+  color: #2f9d77;
+}
+.green_action {
+  color: #2f9d77;
+  font-weight: 800;
+}
+.red_action {
+  font-weight: 800;
+  color: red;
+}

@@ -1,0 +1,108 @@
+/* header {
+  width: 100%;
+} */
+.wrapper {
+  /* position: relative; */
+  /* width: 80%; */
+  margin: 0 auto;
+}
+.nav {
+  position: fixed;
+  bottom: 1rem;
+  height: 15px;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #00412a;
+  border-radius: 3rem;
+  z-index: 100;
+  box-shadow: 0 0 10px gray;
+  overflow: hidden;
+  transition: all 0.1s linear;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background-color: #00412a;
+}
+.nav:hover {
+  height: 60px;
+  overflow: visible;
+  width: 60%;
+}
+.nav:hover::after {
+  z-index: -1;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* margin-top: 50%; */
+  /* transform: rotateY(50%); */
+}
+.nav ul li a {
+  transition: all 0.25s ease-in-out;
+  padding: 10px 10px 7px 10px;
+  /* padding-top: 10px;
+  padding-bottom: 8px; */
+  border-radius: 10px;
+  position: relative;
+}
+.nav ul li a span {
+  position: absolute;
+  left: -70%;
+  top: -160%;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  transform: rotateX(90deg);
+  /* transform: rotateX(100deg); */
+  border-radius: 3rem;
+  background-color: #2f9d77;
+  transition: all 0.2s linear;
+  /* z-index: -1; */
+}
+.nav ul li a:hover span {
+  transform: rotateX(0);
+}
+
+.nav ul li a::before {
+  /* padding: 10px; */
+  content: "";
+  background-color: white;
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px;
+  transition: all 0.25s ease-in-out;
+}
+.nav ul li:hover a::before {
+  opacity: 0.2;
+}
+/* li a:hover {
+  background-color: white;
+  opacity: 1;
+}
+li a:hover i {
+
+} */
+.nav ul li a i {
+  font-size: 24px;
+  color: white;
+  opacity: 1;
+  width: 30px;
+  text-align: center;
+}
