@@ -80,7 +80,13 @@
                                             <option value="2">Đang giao hàng</option>
                                             <option value="3">Giao hàng thành công</option>
                                         </select>
-                                        <button name="btnSubmitOrder" style="padding: 8px 12px; background-image: linear-gradient(to right, #b2c9ac, #73beb7); color: white; text-decoration: none; border-radius: 8px; border: 1px solid transparent; cursor: pointer; margin: 10px 0;" type="submit" value="submit">Cập nhật</button>
+                                        <div>
+                                            <button name="btnSubmitOrder" style="padding: 8px 12px; background-image: linear-gradient(to right, #b2c9ac, #73beb7); color: white; text-decoration: none; border-radius: 8px; border: 1px solid transparent; cursor: pointer; margin: 10px 0;" type="submit" value="submit">Cập nhật</button>';
+                                            if(isset($_GET['act']) && ($_GET['act'] == "showAllOrder3")){
+                                                echo '<a href="/" style="background-color: red; padding: 10px 20px; color: white; text-decoration: none; border-radius: 8px; margin-left: 10px;">Xóa</a>';
+                                            }
+                                            echo '
+                                        </div>
                                     </form>
                                     <a href="'.$_SERVER['PHP_SELF'].'?act=orderDetails&idOrder='.$value['id'].'&codeOrder='.$value['code_order'].'" style="color: green;">Chi tiết đơn hàng</a>
                                 </td>
